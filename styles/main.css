@@ -1,5 +1,63 @@
-/* html {
+html {
   text-align: center;
-} */
+  font-family: Cambria;
+  color: white;
 
-/* css file linked */
+}
+
+.socials {
+  width: 100%;
+  background: purple;
+  height: 35px;
+  margin: 0;
+  position: relative;
+  display: block
+}
+
+body {
+  margin: 0;
+}
+
+.top {
+  margin: 0
+}
+
+.jackhaynes {
+  width: 100%;
+  padding: 6px 0
+}
+
+.github {
+  display: block
+}
+
+.main {
+  background: #101018;
+;
+  height: 75vh;
+  margin: 0;
+}
+
+h1 {
+  padding-top: 25px;
+  margin: 0
+}
+
+.couch {
+  position:relative;
+  top: 10%
+}
+
+.text-block {
+  position: relative;
+  top: 10%
+}
+
+.arrow {
+  font-size: 200%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
