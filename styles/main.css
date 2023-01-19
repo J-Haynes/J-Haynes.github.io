@@ -19,7 +19,7 @@ body {
 }
 
 .top {
-  margin: 0
+  margin: 0;
 }
 
 .jackhaynes {
@@ -41,6 +41,7 @@ body {
 
 h1 {
   padding-top: 25px;
+  padding-bottom: 25px;
   margin: 0
 }
 
@@ -52,11 +53,11 @@ h1 {
 .text-block {
   display: block;
   position: relative;
-  top: 50px;
 }
 
 .arrow {
   font-size: 200%;
+  margin-top: 25px;
 }
 
 a {
@@ -74,7 +75,6 @@ a {
   justify-content: space-around;
   position: relative;
   flex-wrap: wrap;
-  top: 60px;
   margin: 5px auto;
   border-radius: 25px;
   overflow: ;
@@ -131,9 +131,24 @@ h2 {
 }
 
 p {
-  color: black
+  color: black;
+  margin: 0;
 }
 
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: block;
+  background-color: #6b6161;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  width: 75vh;
+  height: 1000px;
+  display: block;
+  margin: auto;
+}
 
 
 li {
