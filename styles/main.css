@@ -142,6 +142,19 @@ p {
   background-color: #6b6161;
 }
 
+.navbar-wrapper {
+  height: 100%;
+  width: 1000px;
+  margin: auto;
+}
+
+.back-button {
+  display: block;
+  left: 0px;
+  height: 100%;
+  width: 150px;
+}
+
 .content-wrapper {
   max-width: 1000px;
   width: 75vh;
