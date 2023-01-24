@@ -16,6 +16,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #6b6161;
 }
 
 .top {
@@ -33,7 +34,7 @@ body {
 
 .main {
   background: #6b6161;
-  height: 100vh;
+  height: auto;
   margin: 0;
   min-height: 900px;
   display: block;
@@ -48,6 +49,7 @@ h1 {
 .couch {
   display:block;
   margin: auto;
+  transition: all .2s ease-in-out;
 }
 
 .text-block {
@@ -63,6 +65,11 @@ h1 {
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  /* filter: invert(100%);
+  -webkit-filter: invert(100%); */
 }
 
 .infoboxes {
@@ -91,6 +98,7 @@ a {
   justify-content: center;
   align-content: center;
   align-items: center;
+  transition: all .1s ease-in-out;
 }
 
 h2 {
@@ -202,6 +210,7 @@ blockquote {
   filter: invert(100%);
   -webkit-filter: invert(100%);
   cursor: pointer;
+  transform: scale(1.07);
 }
 
 li {
@@ -215,6 +224,12 @@ li {
 ul {
   width: 60%;
   margin: auto;
+}
+
+.crest {
+  float: left;
+  display: inline;
+  -webkit-filter: grayscale(1);
 }
 
 @media (max-width: 900px) {
