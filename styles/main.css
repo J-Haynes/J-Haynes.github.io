@@ -257,22 +257,31 @@ ul {
   filter: grayscale(1);
 }
 
+table {
+  /* border: 1px solid white; */
+  color: var(--body-text-colour);
+  margin: auto;
+  width: 750px;
+}
+
+td {
+  width: 50%;
+}
+
+
+
+
 @media (max-width: 900px) {
    .infoboxes {
     flex-wrap: nowrap;
     flex-direction: column;
     width: 300px;
     height: 600px;
+    justify-content: space-between;
   }
   .blog-info, .projects-info, .contact-info, .images-info{
     width: 250px;
     height: 250px;
-  }
-  .blog-page {
-
-  }
-  .infoboxes {
-    justify-content: space-between;
   }
 
   .couch {
@@ -309,7 +318,15 @@ ul {
   .socials {
     height: 27px;
   }
-  
+
+  table {
+    width: auto;
+  }
+
+  .diagram {
+    width: 75%;
+    height: 75%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -318,3 +335,10 @@ ul {
   height: auto;
   }
 }
+/* 
+@media (max-width: 600px) {
+  .diagram {
+    width: 50%;
+    height: 50%;
+  }
+} */
