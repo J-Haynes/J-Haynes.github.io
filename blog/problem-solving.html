@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <div class="top">
+    <div class="socials">
+     <p class="jackhaynes"> Made with 💖 by Jack Haynes</p>
+    </div>
+    <div class="navbar">
+      <div class="navbar-wrapper">
+        <div class="back-button">
+          <a href="blog-splash.html"><img src="../images/back.png" alt="back button"></a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="text-block">
+      <a href="../index.html">
+        <img class="couch" src="../images/couch-150px.png" alt="couch">
+      </a>
+      <h1>Problem Solving</h1> 
+    </div> 
+    <div class="content-wrapper">
+      <p>
+        A time where I was stuck on a problem was when I was building a simple ‘to-do’ app using HTML. CSS and JavaScript. It was my first time doing any sort of ‘hands-off’ coding. This meant I wasn’t answering simple questions to learn the languages in a learning app, I was writing the code from scratch myself.
+      </p>
+      <br>
+      <p>
+        The problem was simple on the face of it. My ‘enter’ button wasn’t working! I had writing small proof of concept code before, so I knew how the code should look like and what it should do. The problem was that it was written within the safe garden walls of learning apps. Learning apps are great for learning new ideas (you would hope so), but they can be a little ‘hand-holdy’ at times.  I was out in the big bad world this time, with just a simple code editor and a web browser at my disposal.
+      </p>
+      <br>
+      <p>
+        I remember where I was too. Sitting in the quiet study area of the HB Williams Memorial Library in Gisborne. Head in hands, wanting to scream. I felt frustrated, I felt hopeless. Mostly I felt that maybe this isn’t for me? Maybe I’m wasting my time. After a brief mental crisis, I grew up, and decided that I’m not going to let this problem defeat me. I started going through a range of solutions.
+      </p>
+      <br>
+      <img src="../images/hb-williams.png" alt="hb williams">
+      <br>
+      <br>
+      <p>
+        The first of which is one of my favourites, google.com. I had had a lot of success with google in the past, both within and outside of coding. With the right keywords, googles algorithms seem to spit out the answer you are looking for more often than not. I would rate myself as an above average ‘googler’ too. With the knowledge of using quotations marks for specific words, dashes to omit words, and the “site:” flag to search a specific site. One of the things holding me back in hindsight was that I had been staring at the same piece of code for so long. Every resource that I looked at visited looked the exact same as what I had written myself.
+      </p>
+      <br>
+      <p>
+        Searching the internet seemed hopeless, my next step was to break the code down line by line and retest my knowledge of functions. I explained every part of the app to myself in my head. 
+      </p>
+      <ol>
+        <li>The user inputs their to-do in the unput box</li>
+        <li>The user presses enter or clicks enter to call the toDo function</li>
+        <li>The toDo function takes the input and creates a list below</li>
+      </ol>
+      <br>
+      <p>
+        I tried a lot of console logging to solve the problem. Clicking the buttons triggered a JavaScript event which I could see a full breakdown of using console.log(e). I could see the event in the console and the information associated with it. The users input was right there! But it wasn’t going to the right place.
+      </p>
+      <br>
+      <p>
+        Only once I fully broke down the app to its basics did it click. I followed the flow of information. The ‘to-do’ is entered by the user, is passed through the function, which displays it on the website. My toDo function was taking an event and creating new HTML elements with the text from the event. The trouble came not from what the function was doing, but inputs to the function. My event listeners were listening for an event and were able to log it, and my functions could take an event and transform HTML. There was just no communication between the two!
+      </p>
+      <br>
+      <p>
+        One letter. One letter was all it took to fix my problem. toDo() became toDo(e). My toDo function finally had an event to work with!
+      </p>
+    </div>      
+  </div>
+</body>
+</html>
